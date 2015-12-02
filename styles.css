@@ -1,3 +1,85 @@
-h1 {
-  color:red;
+* {
+   box-sizing: border-box;
+}
+
+html {
+   background: #FAFAFA;
+}
+
+section {
+   width: 640px;
+   max-width: 100%;
+   margin: 0 auto;
+}
+
+article {
+   background: white;
+   border: 1px solid #edeeee;
+}
+
+header {
+    height: 64px;
+    padding: 14px 20px;
+}
+
+header > *,
+.leftSide > *,
+.rightSide > * {
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.leftSide {
+   width: 90%
+}
+
+.rightSide{
+   width: 8%;
+   text-align: right;
+}
+
+.userIcon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #cccfd0;
+}
+
+.timestampHolder {
+   float: right;
+}
+
+.timestamp {
+   vertical-align: middle;   
+}
+
+.image {
+   width:100%;
+}
+
+.mediaInfo {
+   padding: 0 20px;
+}
+
+.likesAndTimestamp {
+   margin: 16px 0;
+}
+
+.feedback {
+   border-top: 1px solid #eeefef;
+   margin-top: 9px;
+   min-height: 48px;
+}
+
+.feedback > * {
+      display: inline-block;
+   vertical-align: middle;
+}
+
+.likeButton {
+   width: 15%;
+}
+
+.commentCreator {
+   width: 80%;
 }
