@@ -68,12 +68,12 @@ header > *,
 .feedback {
    border-top: 1px solid #eeefef;
    margin-top: 9px;
-   min-height: 48px;
+   padding-top: 4px;
+   height: 48px;
 }
 
 .feedback > * {
       display: inline-block;
-   vertical-align: middle;
 }
 
 .likeButton {
@@ -82,4 +82,12 @@ header > *,
 
 .commentCreator {
    width: 80%;
+}
+
+.commentCreatorInput {
+   height: 40px;
+   width: 100%;
+   background: 0 0;
+    border: none;
+    outline: none;
 }
