@@ -3,7 +3,7 @@ TODO:
 
 * Like button
 * Comment box
-* Make branches for torn down states starting from the beginning
+* Make versions of pages for torn down states starting from the beginning
   1. Just HTML
   2. Add styles
   3. Add scripts
