@@ -1,0 +1,27 @@
+.main-header {
+  width: 640px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.main-header > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header .logo {
+  background: transparent url('instagramLogo.png') no-repeat top left;
+  background-size: 112px 35px;
+  text-indent: -1000px;
+}
+
+/*.main-header .search {
+  justify-content: flex-center;
+}
+
+.main-header .username {
+  justify-content: flex-end;
+}*/
