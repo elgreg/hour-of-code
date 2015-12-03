@@ -3,45 +3,27 @@
     <!-- <link href="normalize.css" rel="stylesheet" type="text/css"/> -->
     <link href="styles.css" rel="stylesheet" type="text/css"/>
     <link href="header-styles.css" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="header-wrapper">
-    <header class="main-header">
-        <h1 class="logo">What's behind Instagram</h1>
-        <input class="search" type="search" placeholder="Search">
-        <a href="#me" class="username">yourUsername</a>
-    </header>
+      <header class="main-header">
+          <h1 class="logo">What's behind Instagram</h1>
+          <input class="search" type="search" placeholder="Search">
+          <a href="#me" class="username">yourUsername</a>
+      </header>
     </div>
     <section>
-
-      <article class="">
-        <header class="">
-          <div class="leftSide">
+      <article>
+        <header>
           <img class="userIcon" src="https://scontent-iad3-1.cdninstagram.com/hphotos-xap1/t51.2885-19/s150x150/12237370_713539908782446_670677394_a.jpg">
-          <div class="ownerAndLocation">
-            <a class="ownerUserLink" title="" href="#owner">
-               username</a>
-          </div>
-          </div>
-          <div class="rightSide">
-            <a class="timestamp" href="#permalink">
-              <time class="timestamp" datetime="2015-12-02T02:04:19.000Z" title="Dec 1, 2015">8m</time>
-            </a>
-          </div>
+          <a class="user" href="#owner">username</a>
+          <time class="timestamp">8m</time>
         </header>
-        <div class="media">
-          <div class="placeholder">
-            <img alt="a picture" class="image" src="https://scontent-iad3-1.cdninstagram.com/hphotos-xpf1/t51.2885-15/s640x640/sh0.08/e35/12301225_927848040624751_2074304820_n.jpg">
-          </div>
-        </div>
-        <div class="mediaInfo">
-          <section class="likesAndTimestamp likesAndTimestampStackedVariant">
-            <div class="likesInfo PostLikers__root">
-            <a class="root" title="aLiker" href="#aLiker" >usernameWhoLikedIt</a><span> and </span>
-            <a class="UserLink__root" title="anotherLiker" href="#anotherLiker">anotherLiker</a>
-            <span> like this</span></div>
-
-
+        <img alt="a picture" class="image" src="https://scontent-iad3-1.cdninstagram.com/hphotos-xpf1/t51.2885-15/s640x640/sh0.08/e35/12301225_927848040624751_2074304820_n.jpg">
+        <div class="horizontalPadded">
+          <section class="verticalPadded">
+            <a class="user" title="aLiker" href="#aLiker" >usernameWhoLikedIt</a> and <a class="user" title="anotherLiker" href="#anotherLiker">anotherLiker</a> like this
           </section>
           <div id="comments"></div>
           <section class="feedback">
@@ -49,9 +31,10 @@
             <div class="commentCreator"><input class="commentCreatorInput" placeholder="Add a comment..." type="text" value=""></div>
           </section>
         </div>
-        </article>
-
+      </article>
     </section>
+
+
     <footer>
       <a href="https://github.com/elgreg/hour-of-code/">About</a>
     </footer>

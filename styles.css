@@ -4,6 +4,8 @@
 
 html {
    background: #FAFAFA;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
 }
 
 section {
@@ -15,6 +17,7 @@ section {
 article {
    background: white;
    border: 1px solid #edeeee;
+   border-radius: 3px;
 }
 
 header {
@@ -22,9 +25,8 @@ header {
     padding: 14px 20px;
 }
 
-header > *,
-.leftSide > *,
-.rightSide > * {
+header > *
+{
    display: inline-block;
    vertical-align: middle;
 }
@@ -45,23 +47,33 @@ header > *,
     border: 1px solid #cccfd0;
 }
 
+.user {
+   color: #125688;
+   font-size: 14px;
+   font-weight: 700;
+   text-decoration: none;
+}
+
 .timestampHolder {
    float: right;
 }
 
 .timestamp {
-   vertical-align: middle;   
+   float: right;
+   padding-top: 8px;
+   color: #a5a7aa;
+   text-decoration: none;
 }
 
 .image {
    width:100%;
 }
 
-.mediaInfo {
+.horizontalPadded {
    padding: 0 20px;
 }
 
-.likesAndTimestamp {
+.verticalPadded {
    margin: 16px 0;
 }
 
@@ -88,6 +100,6 @@ header > *,
    height: 40px;
    width: 100%;
    background: 0 0;
-    border: none;
-    outline: none;
+   border: none;
+   outline: none;
 }
