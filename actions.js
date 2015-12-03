@@ -8,4 +8,11 @@ $(function(){
       $(this).parent().parent().find('.thisLiker').html('');
     }
   });
+
+  $('.commentCreatorInput').keyup(function (e) {
+    if (e.keyCode == 13) {
+        $(this).parent().parent().parent().find('.comments').append('<span class="user">' + $('.username').html() + '</span> ' + $('.commentCreatorInput').val() + '<br/>');
+        $(this).val('')
+    }
+  });
 });
