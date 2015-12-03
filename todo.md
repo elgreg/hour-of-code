@@ -1,8 +1,6 @@
 TODO:
 ======
 
-* Like button
-* Comment box
 * Make versions of pages for torn down states starting from the beginning
   1. Just HTML
   2. Add styles
@@ -20,6 +18,9 @@ What to show in an hour of web development
 2. Styling using CSS
 3. Behavior using JavaScript
 
+Exercises
+=========
+1. Change your username
 
 Cool Shit
 =========
