@@ -20,7 +20,7 @@ body {
 }
 
 .main-header .logo {
-  background: transparent url('instagramLogo.png') no-repeat top left;
+  background: transparent url('images/instagramLogo.png') no-repeat top left;
   background-size: 112px 35px;
   text-indent: -1000px;
 }
