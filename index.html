@@ -3,6 +3,8 @@
     <!-- <link href="normalize.css" rel="stylesheet" type="text/css"/> -->
     <link href="styles.css" rel="stylesheet" type="text/css"/>
     <link href="header-styles.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="actions.js" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -10,24 +12,25 @@
       <header class="main-header">
           <h1 class="logo">What's behind Instagram</h1>
           <input class="search" type="search" placeholder="Search">
-          <a href="#me" class="username">yourUsername</a>
+          <span class="username">yourUsername</span>
       </header>
     </div>
     <section>
       <article>
-        <header>
+        <header class="centerVertical">
           <img class="userIcon" src="https://scontent-iad3-1.cdninstagram.com/hphotos-xap1/t51.2885-19/s150x150/12237370_713539908782446_670677394_a.jpg">
-          <a class="user" href="#owner">username</a>
+          <span class="user">username</span>
           <time class="timestamp">8m</time>
         </header>
         <img alt="a picture" class="image" src="https://scontent-iad3-1.cdninstagram.com/hphotos-xpf1/t51.2885-15/s640x640/sh0.08/e35/12301225_927848040624751_2074304820_n.jpg">
         <div class="horizontalPadded">
           <section class="verticalPadded">
-            <a class="user" title="aLiker" href="#aLiker" >usernameWhoLikedIt</a> and <a class="user" title="anotherLiker" href="#anotherLiker">anotherLiker</a> like this
+            <span class="user thisLiker"></span><span class="user">usernameWhoLikedIt</span> and <span class="user">anotherLiker</span> like this
           </section>
           <div id="comments"></div>
-          <section class="feedback">
-            <a class="likeButton coreSpriteHeartOpen" href="#" role="button">Like</a>
+          <section class="feedback centerVertical">
+            <img class="like" src="heart_empty.png"/>
+            <img class="like like-red" src="heart_red.png" style="display:none;" />
             <div class="commentCreator"><input class="commentCreatorInput" placeholder="Add a comment..." type="text" value=""></div>
           </section>
         </div>

@@ -25,7 +25,7 @@ header {
     padding: 14px 20px;
 }
 
-header > *
+.centerVertical > *
 {
    display: inline-block;
    vertical-align: middle;
@@ -84,16 +84,13 @@ header > *
    height: 48px;
 }
 
-.feedback > * {
-      display: inline-block;
-}
-
 .likeButton {
    width: 15%;
 }
 
 .commentCreator {
    width: 80%;
+   padding-left:10px;
 }
 
 .commentCreatorInput {
