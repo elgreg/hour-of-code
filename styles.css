@@ -8,10 +8,15 @@ html {
    font-weight: 400;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 section {
    width: 640px;
    max-width: 100%;
-   margin: 0 auto;
+   margin: 0 auto 20px auto;
 }
 
 article {
@@ -19,6 +24,35 @@ article {
    border: 1px solid #edeeee;
    border-radius: 3px;
 }
+
+/* Header Styles */
+.header-wrapper {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.main-header {
+  width: 640px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main-header .logo {
+  background: transparent url('images/instagramLogo.png') no-repeat top left;
+  background-size: 112px 35px;
+  text-indent: -99999px;
+}
+
+
+.main-header a:visited {
+  color: blue;
+}
+
 
 header {
     height: 64px;
@@ -103,4 +137,16 @@ header {
    background: 0 0;
    border: none;
    outline: none;
+}
+
+.video {
+  cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 40px 0;
+  background-color: white;
+  text-align: center;
+  font-size: .8em;
 }

@@ -1,12 +1,12 @@
 $(function(){
   var els = {};
-  $("#demo-bar li").click(function(){
+  $("#demoBar li").click(function(){
     var thingId = this.id;
-    $(this).toggleClass('deactivate');
+    $(this).toggleClass('deactivated');
     if(typeof els[thingId] === 'undefined'){
       els[thingId] = [];
     }
-    if($(this).hasClass('deactivate')){
+    if($(this).hasClass('deactivated')){
       // Loop over things with this id and add them to an array
       // in els[thingId]
       $('.' + thingId).each(function(){

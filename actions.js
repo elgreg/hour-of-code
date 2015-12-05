@@ -17,7 +17,11 @@ $(function(){
   });
 
   $('video').on('click', function(){
-    this.play();
+    if(this.paused){
+      this.play();
+    } else {
+      this.pause()
+    }
   });
 
 });
