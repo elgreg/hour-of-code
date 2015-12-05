@@ -14,8 +14,14 @@ $(function(){
         els[thingId].push(comment);
         $(this).replaceWith(comment);
       });
+      if(thingId === 'rmJs'){
+        // hack-ish - have to turn off events for commented out actions.js
+        var actionEventNodes = ['.like', '.commentCreatorInput', 'video'];
+        actionEventNodes.forEach(function(selector){
+          $(selector).off();
+        });
+      }
     } else {
-      console.log(els);
       els[thingId].forEach(function(comment){
         $(comment).replaceWith(comment.nodeValue);
       });
