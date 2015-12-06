@@ -16,13 +16,14 @@ body {
 section {
    width: 640px;
    max-width: 100%;
-   margin: 0 auto 20px auto;
+   margin: 0 auto;
 }
 
 article {
    background: white;
    border: 1px solid #edeeee;
    border-radius: 3px;
+   margin-bottom: 20px;
 }
 
 /* Header Styles */

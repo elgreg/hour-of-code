@@ -1,18 +1,26 @@
 $(function(){
 
   $('.like').on('click', function(){
-    $(this).parent().find('.like').toggle();
-    if ($(this).parent().find('.like-red').is(':visible')){
-      $(this).parent().parent().find('.thisLiker').html($('.username').html() + ', ');
+    var thisFoto = $(this).parents('article');
+    thisFoto.find('.like').toggle();
+    if ($(thisFoto).find('.like-red').is(':visible')){
+      thisFoto.find('.thisLiker').html($('.username').html() + ', ');
     } else {
-      $(this).parent().parent().find('.thisLiker').html('');
+      thisFoto.find('.thisLiker').html('');
     }
   });
 
   $('.commentCreatorInput').on('keyup', function (e) {
-    if (e.keyCode == 13) {
-        $(this).parent().parent().parent().find('.comments').append('<span class="user">' + $('.username').html() + '</span> ' + $('.commentCreatorInput').val() + '<br/>');
-        $(this).val('')
+    var thisFoto = $(this).parents('article');
+    if (e.keyCode == 13) { //enter key pushed, add comment above.
+      thisFoto.find('.comments').append(
+        '<span class="user">' +
+          $('.username').html() +
+        '</span> ' +
+        $('.commentCreatorInput').val() +
+        '<br/>'
+      );
+      $(this).val('')
     }
   });
 
