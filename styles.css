@@ -66,15 +66,6 @@ header {
    vertical-align: middle;
 }
 
-.leftSide {
-   width: 90%
-}
-
-.rightSide{
-   width: 8%;
-   text-align: right;
-}
-
 .userIcon {
     height: 40px;
     width: 40px;
@@ -104,11 +95,11 @@ header {
    width:100%;
 }
 
-.horizontalPadded {
+.social {
    padding: 0 20px;
 }
 
-.verticalPadded {
+.likers {
    margin: 16px 0;
 }
 
@@ -132,7 +123,7 @@ header {
    padding-left:10px;
 }
 
-.commentCreatorInput {
+.commentText {
    height: 40px;
    width: 100%;
    background: 0 0;

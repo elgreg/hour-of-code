@@ -10,14 +10,14 @@ $(function(){
     }
   });
 
-  $('.commentCreatorInput').on('keyup', function (e) {
+  $('.commentText').on('keyup', function (e) {
     var thisFoto = $(this).parents('article');
     if (e.keyCode == 13) { //enter key pushed, add comment above.
       thisFoto.find('.comments').append(
         '<span class="user">' +
           $('.username').html() +
         '</span> ' +
-        $('.commentCreatorInput').val() +
+        $('.commentText').val() +
         '<br/>'
       );
       $(this).val('')
